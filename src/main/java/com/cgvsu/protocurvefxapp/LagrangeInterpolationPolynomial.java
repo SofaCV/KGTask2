@@ -13,6 +13,11 @@ public class LagrangeInterpolationPolynomial implements Drawing {
         this.colorLine = color;
     }
 
+    //для теста
+    public Color getColorLine() {
+        return colorLine;
+    }
+
     private double calculationBasicPolynomials(ArrayList<Point2D> points, double xi, double x, int index) {
         double numerator = 1;
         double denominator = 1;

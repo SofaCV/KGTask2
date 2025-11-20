@@ -22,7 +22,7 @@ public class ProtoCurveController {
     }
 
     ArrayList<Point2D> points = new ArrayList<Point2D>();
-    final int POINT_RADIUS = 3;
+
 
 
 
@@ -49,6 +49,7 @@ public class ProtoCurveController {
     private void redrawAll(GraphicsContext graphicsContext) {
         clearCanvas(graphicsContext);
 
+        final int POINT_RADIUS = 3;
         for (Point2D point : points) {
             graphicsContext.fillOval(
                     point.getX() - POINT_RADIUS, point.getY() - POINT_RADIUS,
