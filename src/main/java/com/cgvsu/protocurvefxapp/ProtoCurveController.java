@@ -21,7 +21,12 @@ public class ProtoCurveController {
        this.chart = ch;
     }
 
-    ArrayList<Point2D> points = new ArrayList<Point2D>();
+    //для теста
+    public Drawing getChart() {
+        return chart;
+    }
+
+    ArrayList<Point2D> points = new ArrayList<>();
 
 
 
