@@ -17,8 +17,6 @@ public class ProtoCurveControllerTest {
     //проверка конструктора
     @Test
     public void checkConstructor(){
-
-
         ProtoCurveController testController = new ProtoCurveController(testPolynomial);
         Drawing testChart = testController.getChart();
 
