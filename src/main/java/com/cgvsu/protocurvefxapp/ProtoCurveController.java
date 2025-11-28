@@ -14,22 +14,18 @@ public class ProtoCurveController {
     AnchorPane anchorPane;
     @FXML
     private Canvas canvas;
-
     private Drawing chart;
 
+    private ArrayList<Point2D> points = new ArrayList<>();
+
     public ProtoCurveController(Drawing ch) {
-       this.chart = ch;
+        this.chart = ch;
     }
 
     //для теста
     public Drawing getChart() {
         return chart;
     }
-
-    ArrayList<Point2D> points = new ArrayList<>();
-
-
-
 
     @FXML
     private void initialize() {
